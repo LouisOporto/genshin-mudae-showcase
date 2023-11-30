@@ -1,5 +1,5 @@
 body {
-  background-color: cornflowerblue;
+  background-color: aliceblue;
 }
 .App {
   text-align: center;
@@ -45,7 +45,8 @@ body {
   display:flex;
   justify-content: space-between;
   border-bottom: 1px solid #282c34;
-  margin-bottom: 2em;
+  background-color: aliceblue;
+  /* margin-bottom: 2em; */
 }
 
 .Right {
@@ -73,10 +74,11 @@ button {
   background-color: aliceblue;
   /* border: 1px solid black; */
   width: 70%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 
 }
-.shelfRow {
+.Shelf {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;

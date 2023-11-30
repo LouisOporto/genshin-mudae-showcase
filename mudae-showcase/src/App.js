@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/navbar';
-import ShelfRow from './components/card';
+import Card from './components/card';
+import characters from './components/data/genshinData.json'
 
 
 function App() {
@@ -11,8 +12,9 @@ function App() {
       <div className="Content">
         <h1>Scott Dolphin's Character Showcase</h1>
         <div className="Shelf">
-          <ShelfRow character1="Hu tao" character2="Furina" character3="Jean" character4="Xin qiu" />
-          <ShelfRow character1="Mona" character2="Yanfei" character3="Zhongli" character4="Xiangling" />
+            {characters.characters.map((item, i) => (
+                <Card characterName={item.key} level={item.level} constellation={item.constellation} ascension={item.ascension}/>
+            ))}
         </div>
       </div>
     </div>
