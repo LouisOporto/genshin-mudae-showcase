@@ -8,7 +8,7 @@ import characters from './components/data/genshinData.json'
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="Content">
         <h1>Scott Dolphin's Character Showcase</h1>
         <div className="Shelf">
