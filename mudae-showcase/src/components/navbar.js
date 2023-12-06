@@ -9,9 +9,9 @@ export default function Navbar() {
                 <p>logo</p>
             </div>
             <div className="Right">
-                <Button text="Characters"/>
-                <Button text="Teams"/>
-                <Button text="About"/>            
+                {/* <Button text="My page"/> */}
+                {/* <Button text="Showcase"/> */}
+                <Button text="Login"/>            
             </div>
         </div>
     )

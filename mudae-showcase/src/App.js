@@ -2,19 +2,28 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/navbar';
 import Card from './components/card';
-import characters from './components/data/genshinData.json'
+import data from './components/data/genshinData.json';
 
 
 function App() {
+  let cw_map = new Map();
+  data.weapons.map((item, i) => {
+      if (item.location !== "") {
+        cw_map.set(item.location, item.key);
+      }
+      return 0;
+    })
+    console.log(cw_map);
+
   return (
     <div className="App">
-      {/* <Navbar /> */}
+      <Navbar />
       <div className="Content">
-        <h1>Scott Dolphin's Character Showcase</h1>
+        <h1>Mudae's Character Showcase</h1>
         <div className="Shelf">
-            {characters.characters.map((item, i) => (
-                <Card characterName={item.key} level={item.level} constellation={item.constellation} ascension={item.ascension}/>
-            ))}
+          {data.characters.map((item, i) => (
+            <Card characterName={item.key} weapon={cw_map.get(item.key)} level={item.level} constellation={item.constellation} ascension={item.ascension} />
+          ))}
         </div>
       </div>
     </div>

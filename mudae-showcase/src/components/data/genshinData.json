@@ -81,7 +81,7 @@
             "level": 90,
             "ascension": 6,
             "refinement": 3,
-            "location": "Raiden Shogun",
+            "location": "RaidenShogun",
             "lock": false,
             "id": 8
         },
@@ -90,7 +90,7 @@
             "level": 90,
             "ascension": 6,
             "refinement": 1,
-            "location": "Hu Tao",
+            "location": "HuTao",
             "lock": false,
             "id": 9
         },
@@ -117,7 +117,7 @@
             "level": 90,
             "ascension": 6,
             "refinement": 1,
-            "location": "Kamisato Ayaka",
+            "location": "KamisatoAyaka",
             "lock": false,
             "id": 12
         },
@@ -495,7 +495,7 @@
             "level": 1,
             "ascension": 0,
             "refinement": 1,
-            "location": "Traveler Dendro",
+            "location": "TravelerDendro",
             "lock": false,
             "id": 0
         },
@@ -902,7 +902,7 @@
                     "value": 5.1
                 }
             ],
-            "location": "Raiden Shogun",
+            "location": "RaidenShogun",
             "lock": false,
             "id": 8
         },
@@ -986,7 +986,7 @@
                     "value": 299.0
                 }
             ],
-            "location": "Raiden Shogun",
+            "location": "RaidenShogun",
             "lock": false,
             "id": 11
         },
@@ -1070,7 +1070,7 @@
                     "value": 16.0
                 }
             ],
-            "location": "Raiden Shogun",
+            "location": "RaidenShogun",
             "lock": false,
             "id": 14
         },
@@ -1154,7 +1154,7 @@
                     "value": 8.2
                 }
             ],
-            "location": "Hu Tao",
+            "location": "HuTao",
             "lock": false,
             "id": 17
         },
@@ -2022,7 +2022,7 @@
                     "value": 33.0
                 }
             ],
-            "location": "Kamisato Ayaka",
+            "location": "KamisatoAyaka",
             "lock": false,
             "id": 48
         },
@@ -2190,7 +2190,7 @@
                     "value": 15.3
                 }
             ],
-            "location": "Hu Tao",
+            "location": "HuTao",
             "lock": false,
             "id": 54
         },
@@ -2274,7 +2274,7 @@
                     "value": 19.4
                 }
             ],
-            "location": "Hu Tao",
+            "location": "HuTao",
             "lock": false,
             "id": 57
         },
@@ -2330,7 +2330,7 @@
                     "value": 37.0
                 }
             ],
-            "location": "Hu Tao",
+            "location": "HuTao",
             "lock": false,
             "id": 59
         },
@@ -2386,7 +2386,7 @@
                     "value": 5.8
                 }
             ],
-            "location": "Hu Tao",
+            "location": "HuTao",
             "lock": false,
             "id": 61
         },
@@ -2582,7 +2582,7 @@
                     "value": 5.8
                 }
             ],
-            "location": "Raiden Shogun",
+            "location": "RaidenShogun",
             "lock": false,
             "id": 68
         },
@@ -2666,7 +2666,7 @@
                     "value": 33.0
                 }
             ],
-            "location": "Kamisato Ayaka",
+            "location": "KamisatoAyaka",
             "lock": false,
             "id": 71
         },
@@ -2694,7 +2694,7 @@
                     "value": 46.0
                 }
             ],
-            "location": "Kamisato Ayaka",
+            "location": "KamisatoAyaka",
             "lock": false,
             "id": 72
         },
@@ -2806,7 +2806,7 @@
                     "value": 63.0
                 }
             ],
-            "location": "Kamisato Ayaka",
+            "location": "KamisatoAyaka",
             "lock": false,
             "id": 76
         },
@@ -2862,7 +2862,7 @@
                     "value": 8.7
                 }
             ],
-            "location": "Kamisato Ayaka",
+            "location": "KamisatoAyaka",
             "lock": false,
             "id": 78
         },
@@ -3170,7 +3170,7 @@
                     "value": 16.0
                 }
             ],
-            "location": "Raiden Shogun",
+            "location": "RaidenShogun",
             "lock": false,
             "id": 89
         },
@@ -17565,7 +17565,7 @@
     ],
     "characters": [
         {
-            "key": "Hu Tao",
+            "key": "HuTao",
             "level": 90,
             "constellation": 1,
             "ascension": 6,
@@ -17609,7 +17609,7 @@
             }
         },
         {
-            "key": "Kamisato Ayaka",
+            "key": "KamisatoAyaka",
             "level": 90,
             "constellation": 0,
             "ascension": 6,
@@ -17620,7 +17620,7 @@
             }
         },
         {
-            "key": "Raiden Shogun",
+            "key": "RaidenShogun",
             "level": 90,
             "constellation": 0,
             "ascension": 6,
@@ -17774,7 +17774,7 @@
             }
         },
         {
-            "key": "Traveler Dendro",
+            "key": "TravelerDendro",
             "level": 60,
             "constellation": 4,
             "ascension": 3,
