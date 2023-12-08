@@ -64,6 +64,12 @@ body {
 
 }
 
+#createAccount {
+  border: none;
+  background: none;
+  text-decoration: underline;
+}
+
 button{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.5em;
