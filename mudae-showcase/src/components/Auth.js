@@ -1,7 +1,7 @@
 import pb from './pocketbase';
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
-import Navbar from './navbar';
+//import Navbar from './navbar';
 
 export default function Auth() {
   const { register, handleSubmit } = useForm();
@@ -13,7 +13,7 @@ export default function Auth() {
     isLoading(pb.authStore.isValid);
   }
 
-  if (!pb.authStore.isValid) {
+  // if (!pb.authStore.isValid) {
     return (
       <>
         <div className="App">
@@ -28,13 +28,13 @@ export default function Auth() {
         </div>
       </>
     );
-  } else {
-    return (
-      <>
-        <div className="App">
-          <Navbar/ >
-        </div>
-      </>
-    );
-  }
+//   } else {
+//     return (
+//       <>
+//         <div className="App">
+//           <Navbar/ >
+//         </div>
+//       </>
+//     );
+//   }
 }

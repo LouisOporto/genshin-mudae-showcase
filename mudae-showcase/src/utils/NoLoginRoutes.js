@@ -1,10 +1,14 @@
-import { Outlet, Navigate } from "react-router-dom";
+import { Outlet, Navigate, Link } from "react-router-dom";
 import pb from "../components/pocketbase";
-
+import Navbar from "../components/navbar";
 const NoLoginRoutes = () => {
-
+console.log(pb.authStore.isValid);
     return (
-        !pb.authStore.isValid ? <Outlet/> : <Navigate to='/home'/>
+        <>
+            <Navbar />
+            {!pb.authStore.isValid ? <Navigate to="/home"/> : <Link to="/home">Go</Link>}
+            <Outlet />
+        </>
     );
 }
 

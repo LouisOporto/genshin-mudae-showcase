@@ -1,7 +1,7 @@
 import '../App.css';
 import Card from './card';
 import data from './data/genshinData.json';
-import pb from './pocketbase';
+//import pb from './pocketbase';
 
 function App() {
   let cw_map = new Map();
@@ -12,7 +12,7 @@ function App() {
     return 0;
   })
   console.log(cw_map);
-  if (pb.authStore.isValid) {
+  // if (pb.authStore.isValid) {
     return (
       <>
         <div className="Content">
@@ -25,9 +25,9 @@ function App() {
         </div>
       </>
     );
-  } else {
-  return (<></>);
-  }
+  // } else {
+  // return (<></>);
+  // }
 }
 
 export default App;

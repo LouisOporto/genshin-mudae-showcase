@@ -8,15 +8,16 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<NoLoginRoutes />}>
-          <Route path="/" element={<Landing />} />
+        <Route path="/"element={<NoLoginRoutes />}>
+          <Route path="home" element={<Landing />} />
           <Route path="login" element={<Auth />} />
         </Route>
         <Route element={<PrivateRoutes />}>
+          <Route />
         </Route>
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
 export default App;

@@ -1,6 +1,7 @@
 import pb from "./pocketbase";
 import User from "./user";
-import Auth from "./Auth";
+//import Auth from "./Auth";
+import {}
 import { useState } from 'react';
 
 function Button({ text, handleClick }) {
@@ -9,14 +10,13 @@ function Button({ text, handleClick }) {
 
 
 export default function Navbar() {
-  const [loading, setLoading] = useState(true);
   function logOut() {
     console.log("Logging out");
     pb.authStore.clear();
-    setLoading(false);
+    <Navigate />
   }
 
-  if (pb.authStore.isValid) {
+  // if (pb.authStore.isValid) {
     return (
       <>
         <div className="Navbar">
@@ -24,20 +24,18 @@ export default function Navbar() {
             <p>logo</p>
           </div>
           <div className="Right">
-            {/* <Button text="My page"/> */}
-            {/* <Button text="Showcase"/> */}
-            <Button text="Login" />
-            <Button text="Logout" handleClick={() => logOut()} />
+            {!pb.authStore.valid ? <Button text="Login" handleClick={() => logIn()} /> : <Button text="Logout" handleClick={() => logOut()} />}
           </div>
         </div>
-        <User/ >
+        {/* <User/ > */}
       </>
     );
-  } else {
-    return (
-      <>
-        <Auth />
-      </>
-    );
-  }
 }
+//   } else {
+//     return (
+//       <>
+//         <Auth />
+//       </>
+//     );
+//   }
+// }
