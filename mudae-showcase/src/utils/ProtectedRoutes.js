@@ -4,9 +4,7 @@ import pb from "../components/pocketbase";
 const PrivateRoutes = () => {
 
     return (
-      //pb.authStore.isValid ? <Outlet/> : <Navigate to='/'/>
-      <>
-      </>
+      pb.authStore.isValid ? <Outlet/> : <Navigate to='/'/>
     );
 }
 

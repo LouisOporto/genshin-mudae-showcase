@@ -2,8 +2,9 @@ import '../App.css';
 import Card from './card';
 import data from './data/genshinData.json';
 //import pb from './pocketbase';
+import Navbar from './navbar';
 
-function App() {
+function User() {
   let cw_map = new Map();
   data.weapons.map((item, i) => {
     if (item.location !== "") {
@@ -15,6 +16,7 @@ function App() {
   // if (pb.authStore.isValid) {
     return (
       <>
+      <Navbar/>
         <div id="userSec" className="App">
           <div className="Content">
             <h1>Mudae's Character Showcase</h1>
@@ -29,4 +31,4 @@ function App() {
     );
 }
 
-export default App;
+export default User;

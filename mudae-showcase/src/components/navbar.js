@@ -1,5 +1,6 @@
 import pb from "./pocketbase";
 import '../App.css';
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   function Button({ text, handleClick }) {
@@ -19,11 +20,10 @@ export default function Navbar() {
           <p>logo</p>
         </div>
         <div className="Right">
-          <a href="#landingSec">Home</a>
-          <a href="#aboutSec">About</a>
-          {pb.authStore.isValid ? <Button text="Logout" handleClick={handleLogout} /> : <></>}
+          <Link to='/home'>Home</Link>
+          <Link to='/about'>About</Link>
+          {pb.authStore.isValid ? <Button text="Logout" handleClick={handleLogout} /> : <Link to="/login">Login/Signup</Link>}
           {pb.authStore.isValid ? <a href="#userSec">User</a> : <></>}
-
         </div>
       </div>
     </>

@@ -1,8 +1,10 @@
 import '../index.css';
+import Navbar from '../components/navbar';
 
 const Landing = () => {
     return (
         <div id="landingSec" className="landing-page">
+            <Navbar/>
             <div className='landing'>
                 <h1 className='landing-title'>Genshin Impact Showcase</h1>
                 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Genshin_Impact_logo.svg/2560px-Genshin_Impact_logo.svg.png" className='genshin-logo'/>

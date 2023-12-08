@@ -1,6 +1,8 @@
 import pb from './pocketbase';
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
+import Navbar from "../components/navbar";
+
 
 export default function Auth() {
   const { register, handleSubmit } = useForm();
@@ -39,6 +41,7 @@ export default function Auth() {
 
   return (
     <>
+      <Navbar/>
       <div className="App">
         <h1>{mode}</h1>
 

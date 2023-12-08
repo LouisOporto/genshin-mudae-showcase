@@ -27,11 +27,7 @@ const NoLoginRoutes = () => {
   // }
 
   return (
-    <>
-      <Navbar />
-      {!pb.authStore.isValid ? <Auth /> : <User />}
-      <Outlet />
-    </>
+    !pb.authStore.isValid ? <Outlet/> : <Navigate to='/home'/>
   );
 }
 
