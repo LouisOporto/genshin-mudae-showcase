@@ -8,7 +8,7 @@ export default function Card({ characterName, weapon, level, constellation, asce
     return (
         <div className="Card">
             <img src={require(`./data/characterImg/${name}_Icon.png`)}></img>
-            <h2>{name}</h2>
+            <h2>{name.replace("_", " " )}</h2>
             <h3>Equipped: {weapon.replace(/([a-z])([A-Z])/g, '$1 $2')}</h3>
             <p>Level {level}</p>
             <p>C{constellation}</p>

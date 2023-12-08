@@ -61,16 +61,28 @@ body {
 .Navlink {
   padding-right: 1em;
   border: 1px solid #282c34;
-  
+
 }
 
-button {
+button{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.5em;
   padding-left: 1em;
   padding-right: 1em;
+  background: white;
+  border: 1px solid black;
 }
 
+a {
+  padding-top: .45em;
+  border: 1px black solid;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-decoration: none;
+  color: black;
+}
 .Content {
   background-color: aliceblue;
   /* border: 1px solid black; */
@@ -94,5 +106,6 @@ button {
 }
 
 .Card img {
-  width:256px;
+  width:100%;
+  border-bottom: black 1px solid;
 }

@@ -1,23 +1,41 @@
-import { Route, Routes, BrowserRouter } from 'react-router-dom';
-import NoLoginRoutes from './utils/NoLoginRoutes';
-import PrivateRoutes from './utils/ProtectedRoutes';
-import Landing from './pages/landing';
-import Auth from './components/Auth';
+// import { Route, Routes, BrowserRouter } from 'react-router-dom';
+// import NoLoginRoutes from './utils/NoLoginRoutes';
+// import PrivateRoutes from './utils/ProtectedRoutes';
+// import Landing from './pages/landing';
+// import Auth from './components/Auth';
 
-const App = () => {
+import pb from "./components/pocketbase";
+import Navbar from "./components/navbar";
+import About from "./pages/about";
+import Auth from "./components/auth";
+import User from "./components/user";
+import Landing from "./pages/landing"
+
+export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/"element={<NoLoginRoutes />}>
-          <Route path="home" element={<Landing />} />
-          <Route path="login" element={<Auth />} />
-        </Route>
-        <Route element={<PrivateRoutes />}>
-          <Route />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <>
+      <Navbar />
+      {!pb.authStore.isValid ? <Auth /> : <User />}
+      <Landing />
+      <About />
+    </>
   );
 }
+// const App = () => {
+//   return (
+//     <BrowserRouter>
+//       <Routes>
+//         <Route element={<NoLoginRoutes />}>
+//           <Route exact path="/" element={<Landing />} />
+//           <Route path="login" element={<Auth />} />
+//           <Route path="logout" element={<Landing />} />
+//         </Route>
+//         <Route element={<PrivateRoutes />}>
+//           <Route />
+//         </Route>
+//       </Routes>
+//     </BrowserRouter>
+//   );
+// }
 
-export default App;
+// export default App;

@@ -1,41 +1,31 @@
 import pb from "./pocketbase";
-import User from "./user";
-//import Auth from "./Auth";
-import {}
-import { useState } from 'react';
-
-function Button({ text, handleClick }) {
-    return <button onClick={handleClick}>{text}</button>;
-}
-
+import '../App.css';
 
 export default function Navbar() {
-  function logOut() {
-    console.log("Logging out");
-    pb.authStore.clear();
-    <Navigate />
+  function Button({ text, handleClick }) {
+    return <button onClick={handleClick}>{text}</button>;
   }
 
-  // if (pb.authStore.isValid) {
-    return (
-      <>
-        <div className="Navbar">
-          <div className="Left">
-            <p>logo</p>
-          </div>
-          <div className="Right">
-            {!pb.authStore.valid ? <Button text="Login" handleClick={() => logIn()} /> : <Button text="Logout" handleClick={() => logOut()} />}
-          </div>
+  function handleLogout() {
+    pb.authStore.clear();
+    console.log("Logging out");
+    window.location.reload(false);
+  }
+
+  return (
+    <>
+      <div className="Navbar">
+        <div className="Left">
+          <p>logo</p>
         </div>
-        {/* <User/ > */}
-      </>
-    );
+        <div className="Right">
+          <a href="#landingSec">Home</a>
+          <a href="#aboutSec">About</a>
+          {pb.authStore.isValid ? <Button text="Logout" handleClick={handleLogout} /> : <></>}
+          {pb.authStore.isValid ? <a href="#userSec">User</a> : <></>}
+
+        </div>
+      </div>
+    </>
+  );
 }
-//   } else {
-//     return (
-//       <>
-//         <Auth />
-//       </>
-//     );
-//   }
-// }
