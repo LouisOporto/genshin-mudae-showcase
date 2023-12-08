@@ -1,4 +1,4 @@
-import pb from './lib/pocketbase';
+/*import pb from './lib/pocketbase';
 
 export default function App() {
     return (
@@ -13,4 +13,4 @@ export default function App() {
             </form>
         </>
     );
-}
+}*/

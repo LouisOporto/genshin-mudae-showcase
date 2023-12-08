@@ -22,7 +22,7 @@ function Pfp({ cName }) {
     let imgLink = "./data/characterImg/" + cName + "_Icon.png";
     return (
         <>
-            <img src={require(imgLink)} alt={cName}></img>
+            <img src={require(imgLink + "")} alt={cName}></img>
             <p>{imgLink}</p>
         </>
 
