@@ -7,7 +7,7 @@
 import pb from "./components/pocketbase";
 import Navbar from "./components/navbar";
 import About from "./pages/about";
-import Auth from "./components/auth";
+import Auth from "./components/Auth";
 import User from "./components/user";
 import Landing from "./pages/landing"
 
