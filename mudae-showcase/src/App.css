@@ -91,3 +91,7 @@ button {
   margin: 1em;
   border-radius: 5px;
 }
+
+.Card img {
+  width:256px;
+}
