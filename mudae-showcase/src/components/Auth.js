@@ -1,4 +1,4 @@
-import pb from './lib/pocketbase';
+import pb from './pocketbase';
 
 export default function App() {
     return (
