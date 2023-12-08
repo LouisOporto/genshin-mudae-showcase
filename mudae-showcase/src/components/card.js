@@ -3,13 +3,12 @@
 
 
 export default function Card({ characterName, weapon, level, constellation, ascension }) {
-
+    const name = (characterName.replace(/([a-z])([A-Z])/g, '$1_$2'));
     // console.log(myWeapons);
     return (
         <div className="Card">
-            <Pfp cName={characterName.replace(/([a-z])([A-Z])/g, '$1_$2')} />
-            {/* <img src={require('./data/characterImg/Aether_Icon.png')}></img> */}
-            <h2>{characterName.replace(/([a-z])([A-Z])/g, '$1 $2')}</h2>
+            <img src={require(`./data/characterImg/${name}_Icon.png`)}></img>
+            <h2>{name}</h2>
             <h3>Equipped: {weapon.replace(/([a-z])([A-Z])/g, '$1 $2')}</h3>
             <p>Level {level}</p>
             <p>C{constellation}</p>
@@ -18,17 +17,20 @@ export default function Card({ characterName, weapon, level, constellation, asce
     )
 }
 
+
+/* Unused
 function Pfp({ cName }) {
     let imgLink = "./data/characterImg/" + cName + "_Icon.png";
+
     return (
         <>
             <img src={require(imgLink + "")} alt={cName}></img>
-            {/* <p>{imgLink}</p> */}
+
         </>
 
     )
 }
-
+*/
 // function stringConvert( cName) {
 //     let convertedString = "./data/characterImg/" + cName + "_Icon.png";
 //     return convertedString;
