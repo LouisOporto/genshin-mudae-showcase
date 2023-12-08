@@ -47,27 +47,55 @@ body {
   border-bottom: 1px solid #282c34;
   background-color: aliceblue;
   height: 10vh;
+  background-color: rgb(52, 50, 50);
+  color: white;
   /* margin-bottom: 2em; */
 }
 
 .Right {
   display: flex;
   justify-content: space-around;
+  color: white;
 }
 .Left {
   padding-left: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.nav-button {
+  color:white;
+}
+
+.nav-button:hover {
+  background-color: white;
+  color: rgb(52, 50, 50);
+  transition-duration: 500ms;
 }
 
 .Navlink {
   padding-right: 1em;
   border: 1px solid #282c34;
-
 }
 
 #createAccount {
   border: none;
   background: none;
   text-decoration: underline;
+}
+
+.nav-log {
+  background-color: gray;
+  color: white;
+}
+
+.nav-log:hover {
+  background-color: white;
+  color: black;
+  transition-duration: 500ms;
+  cursor: pointer;
 }
 
 button{

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   function Button({ text, handleClick }) {
-    return <button onClick={handleClick}>{text}</button>;
+    return <button className='nav-log'  onClick={handleClick}>{text}</button>;
   }
 
   function handleLogout() {
@@ -17,13 +17,12 @@ export default function Navbar() {
     <>
       <div className="Navbar">
         <div className="Left">
-          <p>logo</p>
+          <img src="https://www.pngall.com/wp-content/uploads/13/Genshin-Impact-Logo-PNG-Picture.png" className='genshin-logo'/>
         </div>
         <div className="Right">
-          <Link to='/home'>Home</Link>
-          <Link to='/about'>About</Link>
-          {pb.authStore.isValid ? <Button text="Logout" handleClick={handleLogout} /> : <Link to="/login">Login/Signup</Link>}
-          {pb.authStore.isValid ? <a href="#userSec">User</a> : <></>}
+          <Link className="nav-button" to='/about'>About</Link>
+          {pb.authStore.isValid ? <Link className="nav-button" to='/home'>{pb.authStore.model.email}</Link> : <></>}
+          {pb.authStore.isValid ? <Button text="Logout" handleClick={handleLogout} /> : <Link className="nav-log" to="/login">Login/Signup</Link>}
         </div>
       </div>
     </>
