@@ -1,6 +1,6 @@
 import pb from "./pocketbase";
-import App from "../App";
-import Auth from "./Auth";
+import User from "./user";
+import Auth from "./auth";
 import { useState } from 'react';
 
 function Button({ text, handleClick }) {
@@ -30,7 +30,7 @@ export default function Navbar() {
             <Button text="Logout" handleClick={() => logOut()} />
           </div>
         </div>
-        <App/ >
+        <User/ >
       </>
     );
   } else {
