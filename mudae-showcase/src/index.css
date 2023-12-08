@@ -53,6 +53,7 @@ code {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .landing-paragraph-title {
@@ -63,4 +64,8 @@ code {
 
 .landing-paragraph {
   font-size: 30px;
+}
+
+.paragraph-image {
+  width: 100%;
 }

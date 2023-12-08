@@ -14,7 +14,7 @@ const Landing = () => {
                         <p className='landing-paragraph'>A user is able to upload a json from genshin impact and their characters will be rendered with their images and other details. The information will be displayed on a users profile which is public and can be viewed by others. Users can share links to their pages and show off their collections to friends and other players.</p>
                     </div>
                     <div className='text-area'>
-
+                        <img src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_GenshinImpact_miHoYoLimited_S1_2560x1440-91c6cd7312cc2647c3ebccca10f30399" className='paragraph-image'/>
                     </div>
                 </div>
             </div>
