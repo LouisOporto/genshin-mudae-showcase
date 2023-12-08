@@ -24,7 +24,7 @@ function Pfp({ cName }) {
 
     return (
         <>
-            <img src={require(`./data/characterImg/${cName}f_Icon.png`)} alt={cName}></img>
+            <img src={require(imgLink + "")} alt={cName}></img>
             <p>{imgLink}</p>
         </>
 
