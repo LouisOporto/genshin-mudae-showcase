@@ -1,6 +1,6 @@
 import pb from "./pocketbase";
 import User from "./user";
-import Auth from "./auth";
+import Auth from "./Auth";
 import { useState } from 'react';
 
 function Button({ text, handleClick }) {
