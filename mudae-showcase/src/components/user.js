@@ -56,7 +56,7 @@ return (
     <div id="userSec" className="App">
       <button onClick={popUpTrue}>Upload a JSON</button>
       <div className="Content">
-        <h1>Mudae's Character Showcase</h1>
+        <h1>Character Showcase</h1>
         <div className="Shelf">
           {data ? data?.characters?.map((item, i) => (
             <Card characterName={item.key} weapon={cwMap.get(item.key)} level={item.level} constellation={item.constellation} ascension={item.ascension} />
