@@ -62,7 +62,7 @@ export default function About() {
               />
               <figcaption>
               <br></br>
-                <i>Text</i>
+                <i>I helped with the about page and the video presentation. Also added home button on the nav bar</i>
               </figcaption>
             </figure>
           </div>
