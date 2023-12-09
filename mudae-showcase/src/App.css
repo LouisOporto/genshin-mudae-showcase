@@ -143,3 +143,11 @@ a {
   width:100%;
   border-bottom: black 1px solid;
 }
+
+.Icon{
+  width: 300px;
+}
+.aboutMembers{
+  display: flex;
+  justify-content: space-evenly;
+}
