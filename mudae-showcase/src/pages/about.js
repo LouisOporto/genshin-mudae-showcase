@@ -6,7 +6,9 @@ export default function About() {
     <>
       <Navbar />
       <div id="aboutSec" className="App">
+        <br></br>
         <h1>About Us</h1>
+        <br></br>
         <div className="aboutMembers">
           <div className="member">
             <h2>Nathan</h2>

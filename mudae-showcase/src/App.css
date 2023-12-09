@@ -144,6 +144,18 @@ a {
   /* border-bottom: black 1px solid; */
 }
 
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
 .Icon{
   width: 300px;
 }
@@ -286,3 +298,4 @@ code {
 #createAccount {
   cursor: pointer;
 }
+
