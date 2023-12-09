@@ -141,9 +141,27 @@ a {
 
 .Card img {
   width:100%;
-  border-bottom: black 1px solid;
+  /* border-bottom: black 1px solid; */
 }
 
+.Icon{
+  width: 300px;
+}
+.aboutMembers{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.member {
+  /* border: 1px solid black; */
+  width: 320px;
+}
+
+.member img {
+  margin: auto;
+  width: 90%;
+}
 
 body {
   margin: 0;
