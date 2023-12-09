@@ -1,4 +1,5 @@
 import Navbar from "../components/navbar";
+// import '../App.css';
 
 export default function About() {
   return (
@@ -16,7 +17,8 @@ export default function About() {
                 src="https://hypixel.net/attachments/screenshot_2019-12-29-15-15-35-358-jpeg.1458269/"
               />
               <figcaption>
-                <i>Text</i>
+                <br></br>
+                <i>Came up with the conecpt for the application and created the prototype for the app before implementing pocketbase</i>
               </figcaption>
             </figure>
           </div>
@@ -29,6 +31,7 @@ export default function About() {
                 src="https://hypixel.net/attachments/screenshot_2019-12-29-15-15-35-358-jpeg.1458269/"
               />
               <figcaption>
+              <br></br>
                 <i>Text</i>
               </figcaption>
             </figure>
@@ -42,6 +45,7 @@ export default function About() {
                 src="https://hypixel.net/attachments/screenshot_2019-12-29-15-15-35-358-jpeg.1458269/"
               />
               <figcaption>
+              <br></br>
                 <i>Text</i>
               </figcaption>
             </figure>
@@ -55,6 +59,7 @@ export default function About() {
                 src="https://hypixel.net/attachments/screenshot_2019-12-29-15-15-35-358-jpeg.1458269/"
               />
               <figcaption>
+              <br></br>
                 <i>Text</i>
               </figcaption>
             </figure>

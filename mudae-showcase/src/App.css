@@ -141,7 +141,7 @@ a {
 
 .Card img {
   width:100%;
-  border-bottom: black 1px solid;
+  /* border-bottom: black 1px solid; */
 }
 
 .Icon{
@@ -151,4 +151,14 @@ a {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+.member {
+  /* border: 1px solid black; */
+  width: 320px;
+}
+
+.member img {
+  margin: auto;
+  width: 90%;
 }

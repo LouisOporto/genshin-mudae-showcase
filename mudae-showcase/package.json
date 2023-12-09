@@ -17,7 +17,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "pocketBase": "./pocketbase serve",
+    "pocketBase": "pocketbase serve",
     "oldStart": "react-scripts start",
     "start": "npm-run-all --parallel oldStart pocketBase",
     "build": "react-scripts build",
