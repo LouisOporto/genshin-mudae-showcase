@@ -18,7 +18,7 @@ export default function About() {
               />
               <figcaption>
                 <br></br>
-                <i>Came up with the conecpt for the application and created the prototype for the app before implementing pocketbase</i>
+                <i>Came up with the concept for the application and created the prototype for the app before implementing pocketbase</i>
               </figcaption>
             </figure>
           </div>
@@ -32,7 +32,7 @@ export default function About() {
               />
               <figcaption>
               <br></br>
-                <i>Text</i>
+                <i>Implemented pocketbase with the project for user authentication and account creation.  </i>
               </figcaption>
             </figure>
           </div>
