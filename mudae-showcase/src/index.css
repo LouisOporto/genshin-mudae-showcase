@@ -69,3 +69,53 @@ code {
 .paragraph-image {
   width: 100%;
 }
+
+.auth-page {
+  width: 100vw;
+  max-width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-container {
+  width: 50%;
+  height: 80%;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 40%;
+}
+
+.auth-form input {
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.auth-form button {
+  border-radius: 10px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.auth-form button:hover {
+  background-color: black;
+  color: white;
+  transition-duration: 400ms;
+}
+
+#createAccount {
+  cursor: pointer;
+}

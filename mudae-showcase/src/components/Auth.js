@@ -2,6 +2,7 @@ import pb from './pocketbase';
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 import Navbar from "../components/navbar";
+import '../index.css';
 
 
 export default function Auth() {
@@ -41,18 +42,19 @@ export default function Auth() {
 
   return (
     <>
-      <Navbar/>
-      <div className="App">
-        <h1>{mode}</h1>
+      <Navbar />
+      <div className="auth-page">
+        <div className='auth-container'>
+          <h1>{mode}</h1>
 
-        <form onSubmit={handleSubmit(Authenticate)}>
-          <input type="text" placeholder="email" {...register("email")} />
-          <input type="password" placeholder="password" {...register("password")} />
+          <form className='auth-form' onSubmit={handleSubmit(Authenticate)}>
+            <input type="text" placeholder="email" {...register("email")} />
+            <input type="password" placeholder="password" {...register("password")} />
 
-          <button type="submit">{control}</button>
-        </form>
-        <button id="createAccount" onClick={() => handleAuth()}>{changer}</button>
-
+            <button type="submit">{control}</button>
+          </form>
+          <button id="createAccount" onClick={() => handleAuth()}>{changer}</button>
+        </div>
       </div>
     </>
   );
