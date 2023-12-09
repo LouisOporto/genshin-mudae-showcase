@@ -1,4 +1,4 @@
-import '../index.css';
+import '../App.css';
 import Navbar from '../components/navbar';
 
 const Landing = () => {

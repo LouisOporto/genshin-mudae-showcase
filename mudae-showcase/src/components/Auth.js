@@ -2,7 +2,8 @@ import pb from './pocketbase';
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 import Navbar from "../components/navbar";
-import '../index.css';
+import '../App.css';
+import '../index.css'
 
 
 export default function Auth() {
@@ -33,6 +34,7 @@ export default function Auth() {
         email: `${data.email}`,
         password: `${data.password}`,
         passwordConfirm: `${data.password}`,
+        json: null,
       });
       const authData = await pb.collection("users").authWithPassword(data.email, data.password);
       console.log(authData);
@@ -48,7 +50,7 @@ export default function Auth() {
           <h1>{mode}</h1>
 
           <form className='auth-form' onSubmit={handleSubmit(Authenticate)}>
-            <input type="text" placeholder="email" {...register("email")} />
+            <input className='border-black border-3' type="text" placeholder="email" {...register("email")} />
             <input type="password" placeholder="password" {...register("password")} />
 
             <button type="submit">{control}</button>
