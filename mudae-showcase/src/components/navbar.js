@@ -17,7 +17,8 @@ export default function Navbar() {
     <>
       <div className="Navbar">
         <div className="Left">
-          <img src="https://www.pngall.com/wp-content/uploads/13/Genshin-Impact-Logo-PNG-Picture.png" className='genshin-logo'/>
+          <Link className="nav-button" to='/home'>
+            <img src="https://www.pngall.com/wp-content/uploads/13/Genshin-Impact-Logo-PNG-Picture.png" className='genshin-logo'/></Link>
         </div>
         <div className="Right">
           <Link className="nav-button" to='/about'>About</Link>
